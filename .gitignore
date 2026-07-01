@@ -10,7 +10,10 @@ node_modules
 dist
 dist-ssr
 *.local
+<<<<<<< HEAD
 .env.production
+=======
+>>>>>>> 0717efda0c6ea48073a8f02caae7859e80ea9e10
 
 .vscode/*
 !.vscode/extensions.json

@@ -457,4 +457,8 @@ export default function LandingPage({ onApply }: Props) {
       </footer>
     </div>
   );
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 0717efda0c6ea48073a8f02caae7859e80ea9e10
