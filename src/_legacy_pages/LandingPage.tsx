@@ -1,4 +1,4 @@
-import { Facebook, MessageCircle, Twitter, MapPin, Phone, Mail, ArrowUpRight, ArrowRight, CheckCircle, Briefcase, Users, Globe, FileText, Menu, X, Compass, Star } from 'lucide-react';
+﻿import { Facebook, MessageCircle, Twitter, MapPin, Phone, Mail, ArrowUpRight, ArrowRight, CheckCircle, Briefcase, Users, Globe, FileText, Menu, X, Compass, Star } from 'lucide-react';
 import { useState } from 'react';
 
 interface Props {
@@ -28,32 +28,32 @@ const SOCIAL_BUTTONS = [
 
 const STEPS = [
   { num: 1, icon: FileText, title: 'Fill in the Form', desc: 'Complete the short application form with your name, passport details, and work experience. Takes about 10 minutes.' },
-  { num: 2, icon: Users, title: 'We Review Your Profile', desc: 'Our team reads your application and checks your details within 3–5 working days.' },
+  { num: 2, icon: Users, title: 'We Review Your Profile', desc: 'Our team reads your application and checks your details within 3â€“5 working days.' },
   { num: 3, icon: Briefcase, title: 'We Find You a Job', desc: 'We connect you with real employers in Luxembourg who are actively looking to hire.' },
   { num: 4, icon: Globe, title: 'We Sort Your Visa', desc: 'We guide you through every step of the visa process so you can move to Luxembourg with confidence.' },
 ];
 
 const REGIONS = [
-  { flag: '🇦🇪', name: 'UAE', continent: 'Middle East' },
-  { flag: '🇮🇳', name: 'India', continent: 'Asia' },
-  { flag: '🇵🇭', name: 'Philippines', continent: 'Asia' },
-  { flag: '🇧🇩', name: 'Bangladesh', continent: 'Asia' },
-  { flag: '🇵🇰', name: 'Pakistan', continent: 'Asia' },
-  { flag: '🇱🇰', name: 'Sri Lanka', continent: 'Asia' },
-  { flag: '🇳🇵', name: 'Nepal', continent: 'Asia' },
-  { flag: '🇮🇩', name: 'Indonesia', continent: 'Asia' },
-  { flag: '🇳🇬', name: 'Nigeria', continent: 'Africa' },
-  { flag: '🇬🇭', name: 'Ghana', continent: 'Africa' },
-  { flag: '🇰🇪', name: 'Kenya', continent: 'Africa' },
-  { flag: '🇿🇦', name: 'South Africa', continent: 'Africa' },
-  { flag: '🇨🇲', name: 'Cameroon', continent: 'Africa' },
-  { flag: '🇸🇳', name: 'Senegal', continent: 'Africa' },
-  { flag: '🇲🇦', name: 'Morocco', continent: 'Africa' },
-  { flag: '🇪🇹', name: 'Ethiopia', continent: 'Africa' },
+  { flag: 'ðŸ‡¦ðŸ‡ª', name: 'UAE', continent: 'Middle East' },
+  { flag: 'ðŸ‡®ðŸ‡³', name: 'India', continent: 'Asia' },
+  { flag: 'ðŸ‡µðŸ‡­', name: 'Philippines', continent: 'Asia' },
+  { flag: 'ðŸ‡§ðŸ‡©', name: 'Bangladesh', continent: 'Asia' },
+  { flag: 'ðŸ‡µðŸ‡°', name: 'Pakistan', continent: 'Asia' },
+  { flag: 'ðŸ‡±ðŸ‡°', name: 'Sri Lanka', continent: 'Asia' },
+  { flag: 'ðŸ‡³ðŸ‡µ', name: 'Nepal', continent: 'Asia' },
+  { flag: 'ðŸ‡®ðŸ‡©', name: 'Indonesia', continent: 'Asia' },
+  { flag: 'ðŸ‡³ðŸ‡¬', name: 'Nigeria', continent: 'Africa' },
+  { flag: 'ðŸ‡¬ðŸ‡­', name: 'Ghana', continent: 'Africa' },
+  { flag: 'ðŸ‡°ðŸ‡ª', name: 'Kenya', continent: 'Africa' },
+  { flag: 'ðŸ‡¿ðŸ‡¦', name: 'South Africa', continent: 'Africa' },
+  { flag: 'ðŸ‡¨ðŸ‡²', name: 'Cameroon', continent: 'Africa' },
+  { flag: 'ðŸ‡¸ðŸ‡³', name: 'Senegal', continent: 'Africa' },
+  { flag: 'ðŸ‡²ðŸ‡¦', name: 'Morocco', continent: 'Africa' },
+  { flag: 'ðŸ‡ªðŸ‡¹', name: 'Ethiopia', continent: 'Africa' },
 ];
 
 const DOCS = [
-  'Valid Passport — must not expire for at least 6 months',
+  'Valid Passport â€” must not expire for at least 6 months',
   'A recent passport-sized photo',
   'Proof of work or education history',
   'Travel documents (if you have travelled before)',
@@ -66,7 +66,7 @@ const SERVICES = [
   { icon: Compass, title: 'Job Matching', desc: 'We find employers in Luxembourg that match your skills and work experience.' },
   { icon: FileText, title: 'Visa Help', desc: 'We handle all your visa paperwork and guide you through every step.' },
   { icon: Briefcase, title: 'Full Relocation Support', desc: 'We support you from your first application right through to arriving in Luxembourg.' },
-  { icon: Star, title: 'Your Own Case Manager', desc: 'You get one person to contact throughout your whole journey — no confusion.' },
+  { icon: Star, title: 'Your Own Case Manager', desc: 'You get one person to contact throughout your whole journey â€” no confusion.' },
 ];
 
 export default function LandingPage({ onApply }: Props) {
@@ -75,7 +75,7 @@ export default function LandingPage({ onApply }: Props) {
   return (
     <div className="min-h-screen bg-white text-navy-700" style={{ fontFamily: "'Open Sans', sans-serif" }}>
 
-      {/* ── NAVBAR ── */}
+      {/* â”€â”€ NAVBAR â”€â”€ */}
       <header className="sticky top-0 z-50 bg-white border-b border-sky-border shadow-sm">
         <div className="max-w-6xl mx-auto px-5 flex items-center justify-between h-16">
           <a href="#" className="flex items-center">
@@ -117,13 +117,13 @@ export default function LandingPage({ onApply }: Props) {
               onClick={() => { onApply(); setMenuOpen(false); }}
               className="w-full bg-gold-400 hover:bg-gold-500 text-white text-sm font-bold py-2.5 rounded-lg mt-2"
             >
-              Get Started — Apply Now
+              Get Started â€” Apply Now
             </button>
           </div>
         )}
       </header>
 
-      {/* ── HERO ── */}
+      {/* â”€â”€ HERO â”€â”€ */}
       <section className="bg-navy-700 text-white">
         <div className="max-w-6xl mx-auto px-5 py-16 lg:py-20 grid lg:grid-cols-2 gap-10 items-center">
           {/* Text */}
@@ -143,7 +143,7 @@ export default function LandingPage({ onApply }: Props) {
               <span className="text-gold-300">Luxembourg</span>
             </h1>
             <p className="text-white/75 text-base leading-relaxed mb-8 max-w-md">
-              We help people from Africa, the UAE, and Asia find a real job in Luxembourg — and we handle all the visa paperwork so you can focus on your new life.
+              We help people from Africa, the UAE, and Asia find a real job in Luxembourg â€” and we handle all the visa paperwork so you can focus on your new life.
             </p>
             <div className="flex flex-wrap gap-3 mb-8">
               <button
@@ -151,7 +151,7 @@ export default function LandingPage({ onApply }: Props) {
                 className="bg-gold-400 hover:bg-gold-500 text-white font-bold px-8 py-3.5 rounded-lg transition-all flex items-center gap-2 shadow-lg hover:shadow-xl text-base"
                 style={{ fontFamily: "'Poppins', sans-serif" }}
               >
-                Apply Now — It's Free <ArrowRight className="w-5 h-5" />
+                Apply Now â€” It's Free <ArrowRight className="w-5 h-5" />
               </button>
             </div>
             <a
@@ -169,7 +169,7 @@ export default function LandingPage({ onApply }: Props) {
             </div>
           </div>
 
-          {/* Hero image — bright, clear, full height */}
+          {/* Hero image â€” bright, clear, full height */}
           <div className="hidden lg:block">
             <img
               src="https://images.pexels.com/photos/3182812/pexels-photo-3182812.jpeg?auto=compress&cs=tinysrgb&w=900&h=700&fit=crop"
@@ -180,7 +180,7 @@ export default function LandingPage({ onApply }: Props) {
         </div>
       </section>
 
-      {/* ── STATS BAR ── */}
+      {/* â”€â”€ STATS BAR â”€â”€ */}
       <div className="bg-gold-400 text-white">
         <div className="max-w-6xl mx-auto px-5 py-7 grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
           {[
@@ -197,7 +197,7 @@ export default function LandingPage({ onApply }: Props) {
         </div>
       </div>
 
-      {/* ── SERVICES STRIP ── */}
+      {/* â”€â”€ SERVICES STRIP â”€â”€ */}
       <div className="bg-sky-light border-b border-sky-border">
         <div className="max-w-6xl mx-auto px-5 py-12 grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {SERVICES.map(({ icon: Icon, title, desc }) => (
@@ -214,7 +214,7 @@ export default function LandingPage({ onApply }: Props) {
         </div>
       </div>
 
-      {/* ── ABOUT ── */}
+      {/* â”€â”€ ABOUT â”€â”€ */}
       <section id="about" className="py-20 bg-white">
         <div className="max-w-6xl mx-auto px-5 grid lg:grid-cols-2 gap-14 items-center">
           <div className="relative">
@@ -234,10 +234,10 @@ export default function LandingPage({ onApply }: Props) {
               We help you get a job and move to Luxembourg
             </h2>
             <p className="text-navy-500 leading-relaxed mb-4 text-sm">
-              LuxCareer Help connects workers from Africa, the UAE, and across Asia with real employers in Luxembourg who are actively looking to hire — no matter where you are starting from.
+              LuxCareer Help connects workers from Africa, the UAE, and across Asia with real employers in Luxembourg who are actively looking to hire â€” no matter where you are starting from.
             </p>
             <p className="text-navy-500 leading-relaxed mb-6 text-sm">
-              Once we match you with a job, our team handles your visa documents, guides you on fees, and supports you every step of the way — so you can arrive in Luxembourg ready to work.
+              Once we match you with a job, our team handles your visa documents, guides you on fees, and supports you every step of the way â€” so you can arrive in Luxembourg ready to work.
             </p>
             {/* Africa */}
             <div className="mb-4">
@@ -272,7 +272,7 @@ export default function LandingPage({ onApply }: Props) {
         </div>
       </section>
 
-      {/* ── HOW IT WORKS ── */}
+      {/* â”€â”€ HOW IT WORKS â”€â”€ */}
       <section id="how-it-works" className="py-20 bg-sky-light border-t border-sky-border">
         <div className="max-w-6xl mx-auto px-5">
           <div className="text-center mb-12">
@@ -304,13 +304,13 @@ export default function LandingPage({ onApply }: Props) {
               className="bg-gold-400 hover:bg-gold-500 text-white font-bold px-8 py-3.5 rounded-lg transition-all inline-flex items-center gap-2 shadow-md hover:shadow-lg text-sm"
               style={{ fontFamily: "'Poppins', sans-serif" }}
             >
-              I'm Ready — Apply Now <ArrowRight className="w-4 h-4" />
+              I'm Ready â€” Apply Now <ArrowRight className="w-4 h-4" />
             </button>
           </div>
         </div>
       </section>
 
-      {/* ── REQUIREMENTS ── */}
+      {/* â”€â”€ REQUIREMENTS â”€â”€ */}
       <section id="requirements" className="py-20 bg-white border-t border-sky-border">
         <div className="max-w-6xl mx-auto px-5 grid lg:grid-cols-2 gap-14 items-start">
           <div>
@@ -334,7 +334,7 @@ export default function LandingPage({ onApply }: Props) {
               className="mt-8 bg-gold-400 hover:bg-gold-500 text-white font-bold px-6 py-3 rounded-lg transition-all flex items-center gap-2 shadow-md hover:shadow-lg"
               style={{ fontFamily: "'Poppins', sans-serif" }}
             >
-              I Have My Documents — Apply Now <ArrowRight className="w-4 h-4" />
+              I Have My Documents â€” Apply Now <ArrowRight className="w-4 h-4" />
             </button>
           </div>
 
@@ -344,7 +344,7 @@ export default function LandingPage({ onApply }: Props) {
                 About the Immigration Fee
               </h3>
               <p className="text-amber-800 text-sm leading-relaxed">
-                There is an official immigration processing fee. The exact amount depends on your country. We will give you clear instructions on how and where to pay — never pay anyone outside our official channels.
+                There is an official immigration processing fee. The exact amount depends on your country. We will give you clear instructions on how and where to pay â€” never pay anyone outside our official channels.
               </p>
             </div>
             <div className="bg-sky-light border border-sky-border rounded-2xl p-6">
@@ -367,15 +367,15 @@ export default function LandingPage({ onApply }: Props) {
         </div>
       </section>
 
-      {/* ── CTA BAND ── */}
+      {/* â”€â”€ CTA BAND â”€â”€ */}
       <section className="bg-navy-700 text-white py-16">
         <div className="max-w-3xl mx-auto px-5 text-center">
           <p className="text-gold-300 text-xs font-semibold uppercase tracking-widest mb-3">Ready to Start?</p>
           <h2 className="text-3xl font-bold mb-4" style={{ fontFamily: "'Poppins', sans-serif" }}>
-            Apply today — it only takes 10 minutes
+            Apply today â€” it only takes 10 minutes
           </h2>
           <p className="text-white/65 mb-8 text-sm">
-            Fill in the form and our team will contact you within 3–5 working days with your next steps.
+            Fill in the form and our team will contact you within 3â€“5 working days with your next steps.
           </p>
           <button
             onClick={onApply}
@@ -387,7 +387,7 @@ export default function LandingPage({ onApply }: Props) {
         </div>
       </section>
 
-      {/* ── CONTACT ── */}
+      {/* â”€â”€ CONTACT â”€â”€ */}
       <section id="contact" className="py-20 bg-white border-t border-sky-border">
         <div className="max-w-6xl mx-auto px-5">
           <div className="text-center mb-12">
@@ -395,7 +395,7 @@ export default function LandingPage({ onApply }: Props) {
             <h2 className="text-3xl font-bold text-navy-700" style={{ fontFamily: "'Poppins', sans-serif" }}>
               Talk to Us
             </h2>
-            <p className="text-navy-500 mt-3 text-sm">Have a question? Reach us on any of these channels — we reply every day.</p>
+            <p className="text-navy-500 mt-3 text-sm">Have a question? Reach us on any of these channels â€” we reply every day.</p>
           </div>
 
           <div className="grid sm:grid-cols-3 gap-6 max-w-3xl mx-auto mb-12">
@@ -431,7 +431,7 @@ export default function LandingPage({ onApply }: Props) {
         </div>
       </section>
 
-      {/* ── FOOTER ── */}
+      {/* â”€â”€ FOOTER â”€â”€ */}
       <footer className="bg-navy-800 text-navy-200 border-t border-navy-700">
         <div className="max-w-6xl mx-auto px-5 py-10">
           <div className="flex flex-col md:flex-row items-center justify-between gap-6 mb-8">
@@ -451,14 +451,10 @@ export default function LandingPage({ onApply }: Props) {
           </div>
           <div className="border-t border-navy-700 pt-6 flex flex-col sm:flex-row items-center justify-between gap-3">
             <p className="text-navy-400 text-xs">&copy; {new Date().getFullYear()} LuxCareer Help. All rights reserved.</p>
-            <p className="text-navy-500 text-xs">Job Seeking &amp; Employee Relocation — Luxembourg</p>
+            <p className="text-navy-500 text-xs">Job Seeking &amp; Employee Relocation â€” Luxembourg</p>
           </div>
         </div>
       </footer>
     </div>
   );
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> 0717efda0c6ea48073a8f02caae7859e80ea9e10

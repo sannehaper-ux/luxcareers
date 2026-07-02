@@ -1,8 +1,4 @@
-<<<<<<< HEAD
-// File: C:\Users\KHALED\Desktop\anonymous\luxcareers\app\apply\page.tsx
-=======
-// File: /home/project/app/apply/page.tsx
->>>>>>> 0717efda0c6ea48073a8f02caae7859e80ea9e10
+// File: C:\Users\bundi\Laxury\luxcareers\app\apply\page.tsx
 import * as entry from '../../../../app/apply/page.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 
