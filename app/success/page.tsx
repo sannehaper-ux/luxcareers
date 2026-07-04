@@ -1,9 +1,11 @@
-import SuccessContent from './SuccessContent';
+// app/success/page.tsx
+import SuccessContent from "./SuccessContent";
 
 interface Props {
-  searchParams: { id?: string };
+  searchParams: Promise<{ id?: string }>;
 }
 
-export default function SuccessPage({ searchParams }: Props) {
-  return <SuccessContent applicationId={searchParams.id ?? ''} />;
+export default async function SuccessPage({ searchParams }: Props) {
+  const { id } = await searchParams;
+  return <SuccessContent applicationId={id ?? ""} />;
 }
